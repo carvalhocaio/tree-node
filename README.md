@@ -1,17 +1,15 @@
-# Invertendo uma Árvore Binária
+# Inverting a Binary Tree
 
-Significa trocar os filhos esquerdo e direito de todos os nós da árvore. Esse
-é um problema clássico e muito comum em entrevistas de emprego.
+This means swapping the left and right children of every node in the tree. This is a classic problem and very common in job interviews.
 
-# Teoria
+# Theory
 
-Dada uma árvore binária, inverta-a trocando o filho esquerdo com o direito
-de cada nó recursivamente.
+Given a binary tree, invert it by recursively swapping the left and right child of each node.
 
 Ex:
 
 ```bash
-Antes:               Depois:
+Before:               After:
     1                   1
    / \                 / \
   2   3      -->      3   2
@@ -19,24 +17,24 @@ Antes:               Depois:
 4  5 6  7           7  6 5  4
 ```
 
-## Como inverter?
+## How to invert?
 
-**Estratégias possíveis**:
+**Possible strategies**:
 
-1. Recursiva (DFS - Depth First Search)
-    Para cada nó:  
-        - inverta a subárvore da esquerda  
-        - inverta a subárvore da direita  
-        - troque os ponteiros  
+1. Recursive (DFS - Depth First Search)  
+    For each node:  
+        - invert the left subtree  
+        - invert the right subtree  
+        - swap the pointers  
 
-2. Iterativa (usando fila - BFs - Breath First Search)
-    - use uma fila (ou pilha)
-    - visite cada nó e troque seus filhos
-    - adicione os filhos à fila para continuar o processo
+2. Iterative (using queue - BFS - Breadth First Search)  
+    - use a queue (or stack)  
+    - visit each node and swap its children  
+    - add the children to the queue to continue the process  
 
-## Complexidade
+## Complexity
 
-- **Tempo:** O(n) onde `n` é o número de nós  
-- **Espaço:**  
-    - Recursivo: O(h) onde `h` é a altura da árove (por conta da stack)  
-    - Iterativo: O(n) no pior caso se usar fila
+- **Time:** O(n) where `n` is the number of nodes  
+- **Space:**  
+    - Recursive: O(h) where `h` is the height of the tree (due to the stack)  
+    - Iterative: O(n) in the worst case if
