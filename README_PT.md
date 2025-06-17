@@ -29,9 +29,9 @@ Antes:               Depois:
         - inverta a subárvore da direita  
         - troque os ponteiros  
 
-2. Iterativa (usando fila - BFs - Breath First Search)
+2. Iterativa (usando fila - BFS - Breath First Search)
     - use uma fila (ou pilha)
-    - visite cada nó e troque seus filhosAdd commentMore actions
+    - visite cada nó e troque seus filhos
     - adicione os filhos à fila para continuar o processo
 
 ## Complexidade
